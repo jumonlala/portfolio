@@ -39,17 +39,20 @@
         .carousel-indicators {
             bottom: -3vw;
         }
+
         .accordion-button:focus {
             box-shadow: none;
         }
+
         .progress{
             height: 10px;
             margin-bottom: 1rem;
         }
+
     </style>
 </head>
 <body data-bs-spy = "scroll" data-bs-target="navbarId">
-    <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top" id="navbarId" data-bs-offset="30">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top" id="navbarId">
         <div class="container-fluid">
             <a href="#" class="navbar-brand d-flex ms-2" data-bs-toggle="tooltip" data-bs-placement="right" title="Jimin's Portfolio">
                 Jimin
@@ -69,6 +72,9 @@
                     </li>
                     <li class="nav-item">
                         <a href="#projects" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#blog" class="nav-link">Blog</a>
                     </li>
                     <li class="nav-item">
                         <a href="#contact" class="nav-link">Contact</a>
@@ -124,13 +130,13 @@
         </div>
     </section>
 
-    <section id="aboutme" class="container font-family-monospace pt-5">
-        <div class="row pt-5">
-            <h2 class="text-center pb-5" style="font-size: max(1.5em, 3vw);">About Me</h2>
-            <div class="col-12 col-sm-6 pb-5 pb-sm-0">
+    <section id="aboutme" class="container font-family-monospace my-3">
+        <div class="row">
+            <h2 class="text-center pb-5" style="font-family: 'Righteous', sans-serif; font-size: max(1.5em, 3vw);">About Me</h2>
+            <div class="col-12 col-sm-6 pb-5 pb-sm-0 fw-light lh-small ">
                 <h3 style="margin: 1rem 0rem; padding-bottom: 0.5rem;">Welcome to my portfolio website!</h3>
                 <div style="font-size: 1.2rem; line-height: 1.5rem;">
-                    I’m Jimin, a Junior majoring in Data Science with a minor in Music.<br><br>
+                    I’m <b>Jimin</b>, a Junior majoring in <b>Data Science</b>with a minor in Music.<br><br>
                     My passion lies at the intersection of data science, human-computer interaction, education, and mental health, where I’m driven to use technology to address societal challenges.<br>
                     <div class="d-flex gap-3 mt-4">
                         <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#moreAboutMe" style="background-color: rgb(233, 233, 106); border: none; color: black;">
@@ -164,14 +170,14 @@
                 </div>
             </div>
             <div class="col-12 col-sm-6">
-                <div class="accordion accordion-flush" id="resumeAccordion">
+                <div class="accordion accordion-flush fw-light lh-small" id="resumeAccordion">
                     <div class="accordion-item">
                         <h5 class="accordion-header">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#educationCollapse">
                             Education
                             </button>
                         </h5>
-                        <div id="educationCollapse" class="fw-light lh-small accordion-collapse collapse show" data-bs-parent="#resumeAccordion">
+                        <div id="educationCollapse" class="accordion-collapse collapse show" data-bs-parent="#resumeAccordion">
                             <div class="accordion-body d-flex flex-row align-items-center justify-content-around">
                                 <div>
                                     <b>Washington University in St. Louis</b> <br>
@@ -182,28 +188,6 @@
                                 <div class="ms-3" style="max-width: 40%;">
                                     <img class="img-fluid" src="https://fox2now.com/wp-content/uploads/sites/14/2024/08/WashU-new-logo.jpg?w=1280">
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h5 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#experienceCollapse">
-                            Experience
-                            </button>
-                        </h5>
-                        <div id="experienceCollapse" class="accordion-collapse collapse" data-bs-parent="#resumeAccordion">
-                            <div class="accordion-body">
-                                <div>
-                                    <b>Teaching Assistant for CSE314A</b> <br>
-                                    (202408/26 - present) <br>
-                                    Data Manipulation and Management <br>
-                                </div>  
-                                <div>
-                                    <b></b> <br>
-                                    Expected graduation: May 2026 <br>
-                                    Major: <b>Data Science</b><br>
-                                    GPA: 3.99/4.0 <br>
-                                </div>  
                             </div>
                         </div>
                     </div>
@@ -278,7 +262,22 @@
                         </h5>
                         <div id="awardsCollapse" class="accordion-collapse collapse" data-bs-parent="#resumeAccordion">
                             <div class="accordion-body">
-                                
+                                <div>
+                                    <b>Dean's List</b> <br>
+                                    <p>(2022-2024)</p>
+                                </div>
+                                <div>
+                                    <b>Biology Summer Undergraduate Research Fellowship (BioSURF)</b> <br>
+                                    <p>(06/2024-08/2024)</p>
+                                </div>
+                                <div>
+                                    <b>Department of Music Spring Award</b> <br>
+                                    <p>(2023)</p>
+                                </div>
+                                <div>
+                                    <b>Korean Presidential Science Scholarship</b> <br>
+                                    <p>(2022-2026)</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -290,7 +289,68 @@
                         </h5>
                         <div id="coursesCollapse" class="accordion-collapse collapse" data-bs-parent="#resumeAccordion">
                             <div class="accordion-body">
-                                
+                                <p>Introduction to Data Science</p>
+                                <p>Data Structures and Algorithm</p>
+                                <p>Matrix Algebra</p>
+                                <p>Data Manipulation and Management</p>
+                                <p>Statistics for Data Science</p>
+                                <p>Probability</p>
+                                <p>Introduction to Machine Learning</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h5 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#experienceCollapse">
+                            Experience
+                            </button>
+                        </h5>
+                        <div id="experienceCollapse" class="accordion-collapse collapse" data-bs-parent="#resumeAccordion">
+                            <div class="accordion-body">
+                                <div>
+                                    <b>Teaching Assistant for CSE314A</b> <br>
+                                    <p>(08/2024 - )</p>
+                                </div>  
+                                <div>
+                                    <b>Residential Advisor</b> <br>
+                                    <p>(08/2024 - )</p>
+                                </div>
+                                <div>
+                                    <b>Center for Career Engagement Undergraduate Student Advisory Board</b> <br>
+                                    <p>Member (08/2024 - )</p>
+                                </div>
+                                <div>
+                                    <b>Engineering Undergraduate Student Services</b> <br>
+                                    <p>Tutor (08/2024 - )</p>
+                                </div>
+                                <div>
+                                    <b>WAGS</b> <br>
+                                    <p>Volunteer (08/2024 - )</p>
+                                </div>
+                                <div>
+                                    <b>Greg Delos Y Tutor</b> <br>
+                                    <p>Volunteer (08/2024 - )</p>
+                                </div>
+                                <div>
+                                    <b>Undergraduate Research Assistant at McDonnell Genome Institute</b> <br>
+                                    <p>(12/2023 - )</p>
+                                </div>
+                                <div>
+                                    <b>Cadence for Care</b> <br>
+                                    <p>Program Leader (12/2023 - )</p>
+                                </div>
+                                <div>
+                                    <b>Office of International Students and Scholars First Year Program Leader</b> <br>
+                                    <p>(04/23 - 10/23)</p>
+                                </div>
+                                <div>
+                                    <b>Humanities Digital Workshop Fellowship</b>
+                                    <p>(03/2023 - 08/2023)</p>
+                                </div>
+                                <div>
+                                    <b>Student Lead at WashU Sumers Recreation Center</b>
+                                    <p>(06/2023 - 01/2024)</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -299,77 +359,83 @@
         </div>
     </section>
 
-    <section id="projects" class="container-fluid">
-        <div class="row min-vh-100 w-100 align-items-center">
-            <div class="text-center">
-                <h2 class="pb-4" style="font-size: max(1.5em, 3vw);">Projects</h2>
-                <div class="row justify-content-around">
-                    <div class="card mb-3" style="width: 16rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Dice Game</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iusto
-                                quod
-                                quidem.
-                            <div class="text-white">
-                                <span class="bg-primary bg-opacity-75 rounded p-1 px-2">HTML</span>
-                                <span class="bg-primary bg-opacity-75 rounded p-1 px-2">CSS</span>
-                                <span class="bg-primary bg-opacity-75 rounded p-1 px-2">Javascript</span>
-                            </div>
-                        </div>
-                        <div class="card-footer bg-transparent text-start">
-                            <a href="#" class="text-dark"><i class="bi bi-github"></i></a>
-                            <a href="#" class="text-dark"><i class="bi bi-link"></i></a>
+    <section id="projects" class="container mt-5 pt-3">
+        <div class="row m-3">
+            <h2 class="text-center pb-4" style="font-family: 'Righteous', sans-serif; font-size: max(1.5em, 3vw);">Projects</h2>
+            <div class="row justify-content-center">
+                <div class="card mb-3 col-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Dice Game</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iusto
+                            quod
+                            quidem.
+                        <div class="text-white">
+                            <span class="bg-primary bg-opacity-75 rounded p-1 px-2">HTML</span>
+                            <span class="bg-primary bg-opacity-75 rounded p-1 px-2">CSS</span>
+                            <span class="bg-primary bg-opacity-75 rounded p-1 px-2">Javascript</span>
                         </div>
                     </div>
-                    <div class="card mb-3" style="width: 16rem;">
-                        Project Card
+                    <div class="card-footer bg-transparent text-start">
+                        <a href="#" class="text-dark"><i class="bi bi-github"></i></a>
+                        <a href="#" class="text-dark"><i class="bi bi-link"></i></a>
                     </div>
-                    <div class="card mb-3" style="width: 16rem;">
-                        Project Card
+                </div>
+                <div class="card mb-3 col-3">
+                    Project Card
+                </div>
+                <div class="card mb-3 col-3">
+                    Project Card
 
-                    </div>
-                    <div class="card mb-3" style="width: 16rem;">
-                        Project Card
-
-                    </div>
-                    <div class="card mb-3" style="width: 16rem;">
-                        Project Card
-                    </div>
-
+                </div>
+                <div class="card mb-3 col-3">
+                    Project Card
                 </div>
             </div>
         </div>
-        <section id="data-science" class="container pt-5">
-
-        </section>
-        <section id="web-dev" class="container pt-5">
-
-        </section>
-        <section id="music" class="container pt-5">
-
-        </section>
     </section>
+    <section id="blog" class="container mt-5 pt-3">
+        <div class="row m-3">
+            <h2 class="text-center pb-4" style="font-family: 'Righteous', sans-serif; font-size: max(1.5em, 3vw);">Blog</h2>
+            <div class="row justify-content-center">
+                <div class="card mb-3 col-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Dice Game</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iusto
+                            quod
+                            quidem.
+                        <div class="text-white">
+                            <span class="bg-primary bg-opacity-75 rounded p-1 px-2">HTML</span>
+                            <span class="bg-primary bg-opacity-75 rounded p-1 px-2">CSS</span>
+                            <span class="bg-primary bg-opacity-75 rounded p-1 px-2">Javascript</span>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-transparent text-start">
+                        <a href="#" class="text-dark"><i class="bi bi-github"></i></a>
+                        <a href="#" class="text-dark"><i class="bi bi-link"></i></a>
+                    </div>
+                </div>
+                <div class="card mb-3 col-3">
+                    Project Card
+                </div>
+                <div class="card mb-3 col-3">
+                    Project Card
 
-    <section id="contact" class="container-fluid">
-        <div class="d-flex flex-column min-vh-100 w-100 align-items-center justify-content-center">
-            <h2 class="text-center" style="font-size: max(1.5em, 3vw);">Contact</h2>
-            <form style="width: 40rem;">
-                <div class="mb-3">
-                    <label for="nameInput" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="nameInput">
                 </div>
-                <div class="mb-3">
-                    <label for="emailInput" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="emailInput">
+                <div class="card mb-3 col-3">
+                    Project Card
                 </div>
-                <div class="mb-3">
-                    <label class="form-check-label" for="messageInput">Message</label>
-                    <textarea class="form-control" id="messageInput" rows="10rem"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
+            </div>
         </div>
     </section>
+    <section id="contact" class="container mt-5 mb-3 py-3">
+        <div class="row mt-3">
+            <h2 class="text-center" style="font-family: 'Righteous', sans-serif; font-size: max(1.5em, 3vw);">Contact</h2>
+            <div class="fw-light">
+                <h4 class="text-center">Email: <a href="mailto:jimin.l@wustl.edu">jimin.l@wustl.edu</a></h4>
+            </div>
+        </div>
+    </section>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
