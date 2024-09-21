@@ -1,6 +1,6 @@
 # Portfolio Website
 
-I created a static portfolio website to showcase my background, resume, projects, and blog, hosted on GitHub Pages.
+I created a static [portfolio website](https://jumonlala.github.io/portfolio/) to showcase my background, resume, projects, and blog, hosted on GitHub Pages.
 
 Using HTML, CSS, and JavaScript, I developed the website's structure and incorporated features that allow for easy updates. 
 
