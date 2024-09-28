@@ -71,10 +71,10 @@
                         <a href="#aboutme" class="nav-link">About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#projects" class="nav-link">Projects</a>
+                        <a href="#projectContainer" class="nav-link">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#blog" class="nav-link">Blog</a>
+                        <a href="#blogContainer" class="nav-link">Blog</a>
                     </li>
                     <li class="nav-item">
                         <a href="#contact" class="nav-link">Contact</a>
@@ -97,14 +97,14 @@
                             <button type="button" data-bs-target="#positionCarousel" data-bs-slide-to = 2></button>
                         </div>
                         <div class="carousel-inner">
-                            <div class="carousel-item active" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Explore">
-                                <a href="#data-science" class="text-decoration-none"><span style="color: blue;">Data Scientist</span></a>
+                            <div class="carousel-item active">
+                                <span style="color: blue;">Data Scientist</span>
                             </div>
-                            <div class="carousel-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Explore">
-                                <a href="#web-dev" class="text-decoration-none"><span style="color: #de7e02;">Web Developer</span></a>
+                            <div class="carousel-item">
+                                <span style="color: #de7e02;">Web Developer</span>
                             </div>
-                            <div class="carousel-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Explore">
-                                <a href="#music" class="text-decoration-none"><span style="color: #45039c;">Musician</span></a>
+                            <div class="carousel-item">
+                                <span style="color: #45039c;">Musician</span>
                             </div>
                         </div>
                         <button class="carousel-control-prev" data-bs-target="#positionCarousel" data-bs-slide="prev">
@@ -136,7 +136,7 @@
             <div class="col-12 col-sm-6 pb-5 pb-sm-0 fw-light lh-small ">
                 <h3 style="margin: 1rem 0rem; padding-bottom: 0.5rem;">Welcome to my portfolio website!</h3>
                 <div style="font-size: 1.2rem; line-height: 1.5rem;">
-                    I’m <b>Jimin</b>, a Junior majoring in <b>Data Science</b>with a minor in Music.<br><br>
+                    I’m <b>Jimin</b>, a Junior majoring in <b>Data Science</b> with a minor in Music.<br><br>
                     My passion lies at the intersection of data science, human-computer interaction, education, and mental health, where I’m driven to use technology to address societal challenges.<br>
                     <div class="d-flex gap-3 mt-4">
                         <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#moreAboutMe" style="background-color: rgb(233, 233, 106); border: none; color: black;">
@@ -288,14 +288,14 @@
                             </button>
                         </h5>
                         <div id="coursesCollapse" class="accordion-collapse collapse" data-bs-parent="#resumeAccordion">
-                            <div class="accordion-body">
-                                <b>Introduction to Machine Learning</b>
-                                <b>Matrix Algebra</b>
-                                <b>Probability</b>
-                                <b>Data Manipulation and Management</b>
-                                <b>Statistics for Data Science</b>
-                                <b>Introduction to Data Science</b>
-                                <b>Data Structures and Algorithm</b>
+                            <div class="accordion-body lh-3">
+                                <b>Introduction to Machine Learning</b><br/>
+                                <b>Matrix Algebra</b><br/>
+                                <b>Probability</b><br/>
+                                <b>Data Manipulation and Management</b><br/>
+                                <b>Statistics for Data Science</b><br/>
+                                <b>Introduction to Data Science</b><br/>
+                                <b>Data Structures and Algorithm</b><br/>
                             </div>
                         </div>
                     </div>
@@ -359,71 +359,17 @@
         </div>
     </section>
 
-    <section id="projects" class="container mt-5 pt-3">
+    <section id="projectContainer" class="container mt-5 pt-3">
         <div class="row m-3">
             <h2 class="text-center pb-4" style="font-family: 'Righteous', sans-serif; font-size: max(1.5em, 3vw);">Projects</h2>
-            <div class="row justify-content-center">
-                <div class="card mb-3 col-3">
-                    <div class="card-body">
-                        <h5 class="card-title">Dice Game</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iusto
-                            quod
-                            quidem.
-                        <div class="text-white">
-                            <span class="bg-primary bg-opacity-75 rounded p-1 px-2">HTML</span>
-                            <span class="bg-primary bg-opacity-75 rounded p-1 px-2">CSS</span>
-                            <span class="bg-primary bg-opacity-75 rounded p-1 px-2">Javascript</span>
-                        </div>
-                    </div>
-                    <div class="card-footer bg-transparent text-start">
-                        <a href="#" class="text-dark"><i class="bi bi-github"></i></a>
-                        <a href="#" class="text-dark"><i class="bi bi-link"></i></a>
-                    </div>
-                </div>
-                <div class="card mb-3 col-3">
-                    Project Card
-                </div>
-                <div class="card mb-3 col-3">
-                    Project Card
-
-                </div>
-                <div class="card mb-3 col-3">
-                    Project Card
-                </div>
+            <div class="row justify-content-center" id="projects">
             </div>
         </div>
     </section>
-    <section id="blog" class="container mt-5 pt-3">
+    <section id="blogContainer" class="container mt-5 pt-3">
         <div class="row m-3">
             <h2 class="text-center pb-4" style="font-family: 'Righteous', sans-serif; font-size: max(1.5em, 3vw);">Blog</h2>
-            <div class="row justify-content-center">
-                <div class="card mb-3 col-3">
-                    <div class="card-body">
-                        <h5 class="card-title">Dice Game</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iusto
-                            quod
-                            quidem.
-                        <div class="text-white">
-                            <span class="bg-primary bg-opacity-75 rounded p-1 px-2">HTML</span>
-                            <span class="bg-primary bg-opacity-75 rounded p-1 px-2">CSS</span>
-                            <span class="bg-primary bg-opacity-75 rounded p-1 px-2">Javascript</span>
-                        </div>
-                    </div>
-                    <div class="card-footer bg-transparent text-start">
-                        <a href="#" class="text-dark"><i class="bi bi-github"></i></a>
-                        <a href="#" class="text-dark"><i class="bi bi-link"></i></a>
-                    </div>
-                </div>
-                <div class="card mb-3 col-3">
-                    Project Card
-                </div>
-                <div class="card mb-3 col-3">
-                    Project Card
-
-                </div>
-                <div class="card mb-3 col-3">
-                    Project Card
-                </div>
+            <div class="row justify-content-center" id="blogs">
             </div>
         </div>
     </section>
@@ -445,5 +391,6 @@
             return new bootstrap.Tooltip(tooltipTriggerEl)
         })
     </script>
+    <script src="script.js"></script>
 </body>
 </html>
