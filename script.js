@@ -48,6 +48,12 @@ class Card {
             cardFooter.appendChild(githubLink);
         };
 
+        if (this.github && this.link){
+            let spanElement = document.createElement('span');
+            spanElement.textContent = " ";
+            cardFooter.append(spanElement);
+        };
+
         if (this.link) {
             let link = document.createElement('a');
             link.classList.add('text-dark');
