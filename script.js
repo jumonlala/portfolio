@@ -71,7 +71,7 @@ class Card {
     }
 }
 
-cardList = []; 
+var cardList = []; 
 cardList.push(new Card('projects', 'Deep Learning-Driven Assessment of iPSC Colony Health from Bright-Field Imaging', "I researched automating quality assessment of induced pluripotent stem cells (iPSCs) by generating synthetic images in Blender to train 50+ models, including YOLOv8, enhancing detection and classification of iPSC characteristics.", ['Pytorch', 'Blender', 'YOLO'], null, 'resources/biosurf_poster.pdf'));
 cardList.push(new Card('projects', '2024 Presidential Debate Analysis: Semantic & Sentiment Insights', "I performed a semantic and sentiment analysis of the 2024 presidential debate between candidates Harris and Trump using the Pattern library. The project includes an interactive visualization for exploring sentiment, subjectivity, and certainty in candidates' responses, with filtering options by candidate.", ['Python', 'JS', 'HTML', 'CSS'], 'https://github.com/jumonlala/harris_trump_debate', 'https://jumonlala.github.io/harris_trump_debate/'));
 cardList.push(new Card('projects', 'The Cycle of Socialization: A Visual Model', "This project visualizes an individual's journey through the cycle of socialization, where distinct shapes and colors represent diverse identities encountered throughout life. It illustrates how education and self-reflection empower the individual to expand their comfort zone and engage with these identities.", ['JS', 'HTML', 'CSS', 'Bootstrap'], 'https://github.com/jumonlala/cycle-of-socialization', 'https://jumonlala.github.io/cycle-of-socialization/'));
@@ -89,3 +89,65 @@ cardList.push(new Card('blogs', 'Analyzing Two-Part and Three-Part Sonata Forms 
 cardList.forEach(card => {
     card.addCard();
 });
+
+class Accordion {
+    constructor(parent, title, nickname, link){
+        this.parent = parent;
+        this.title = title;
+        this.nickname = nickname;
+        this.link = link;
+    }
+    addAccordion(){
+        let accordion = document.createElement("div");
+        accordion.classList.add('accordion-item');
+        
+        let accordionHeader = document.createElement("h5");
+        accordionHeader.classList.add("accordion-header");
+        let accordionButton = document.createElement("button");
+        accordionButton.classList.add("accordion-button", "collapsed");
+        accordionButton.setAttribute("data-bs-toggle", "collapse");
+        accordionButton.setAttribute("data-bs-target", "#" + this.nickname + "Collapse");
+        accordionButton.setAttribute("type", "button");
+        accordionButton.textContent = this.title;
+
+        accordionHeader.appendChild(accordionButton);
+
+        let accordionCollapse = document.createElement("div");
+        accordionCollapse.id = this.nickname + "Collapse";
+        accordionCollapse.classList.add("accordion-collapse", "collapse");
+        accordionCollapse.setAttribute("data-bs-parent", "#" + this.parent);
+
+        let accordionBody = document.createElement("div");
+        accordionBody.classList.add("accordion-body");
+        
+        let accordionVideo = document.createElement("iframe");
+        accordionVideo.width = "560"; accordionVideo.height = "315";
+        accordionVideo.src = this.link;
+        accordionVideo.frameborder = "0";
+        accordionVideo.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+        accordionVideo.referrerPolicy = "strict-origin-when-cross-origin";
+        accordionVideo.allowFullscreen = true;
+        
+        accordionBody.appendChild(accordionVideo);
+        accordionCollapse.appendChild(accordionBody);
+
+        accordion.appendChild(accordionHeader);
+        accordion.appendChild(accordionCollapse);
+
+        let parent = document.getElementById(this.parent);
+        parent.appendChild(accordion);
+    }
+}
+
+var accordionList = [];
+accordionList.push(new Accordion("music", "Dutilleux Sonatine for Flute and Piano", "dutilleux", "https://www.youtube.com/embed/cTe5og-jGGg?si=jkoPL1I9yPo839mV"));
+accordionList.push(new Accordion("music", "Valerie Coleman Danza de la Mariposa", "coleman", "https://www.youtube.com/embed/XXV9g0RVA3M?si=fbJGyzXeArJfA3cX"));
+accordionList.push(new Accordion("music", "Liebermann Concerto for Flute and Orchestra III. Presto", "liebermann", "https://www.youtube.com/embed/IukQ-W78Xho?si=a1iaPzs0UL4z2bFa"));
+accordionList.push(new Accordion("music", "Prokofiev Flute Sonata in D Major, Op. 94 I. Moderato", "prokofiev", "https://www.youtube.com/embed/QEDPapBq8EI?si=9NLkuQXSok4cYUvz"));
+accordionList.push(new Accordion("music", "Borne Carmen Fantasy for Flute and Piano", "borne", "https://www.youtube.com/embed/GXqd2g5yxlg?si=brHv8_hl7zR8cvyr"));
+accordionList.push(new Accordion("music", "Chaminade Flute Concerto, Op. 107", "chaminade", "https://www.youtube.com/embed/8f-aRbGXzC4?si=FIkOIs8vG0tNBjM1"));
+accordionList.push(new Accordion("music", "Faure Fantasie, Op. 79", "faure", "https://www.youtube.com/embed/IY2VMcT5qCY?si=JO1riEQJgLIPT2Ew"));
+
+accordionList.forEach(accordion => {
+    accordion.addAccordion();
+})
