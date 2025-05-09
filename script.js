@@ -72,6 +72,10 @@ class Card {
 }
 
 var cardList = []; 
+
+cardList.push(new Card('projects', 'Enhancing Algerian Forest Fire Prediction with Machine Learning', "", null, null, 'resources/cse514_final.pdf'))
+cardList.push(new Card('projects', 'Comprehensive Regression Modeling and Statistical Inference on Starcraft Data', "", null, null, 'resources/sds4211_final.pdf'))
+
 cardList.push(new Card('projects', 'St. Louis Car Crimes Geo-Distribution Analysis', "My teammate and I dveloped a St. Louis City-specific dashboard with interactive map and charts to visualize car crime hotspots and neighborhood data, aiding in informed decision-making.", ['D3.js', 'Leaflet', 'HTML', 'CSS'], 'https://github.com/csex57/car-crimes', 'https://csex57.github.io/car-crimes/'));
 cardList.push(new Card('projects', 'Multivariate Statistical Analysis of Home Run Trends', "My team analyzed home run distance trends using statistical linear models, refined through diagnostic tests and multicollinearity assessments, showcasing transferable expertise in data interpretation for complex datasets.", ['R'], null, 'resources/sds439.pdf'));
 cardList.push(new Card('projects', 'Deep Learning-Driven Assessment of iPSC Colony Health from Bright-Field Imaging', "I researched automating quality assessment of induced pluripotent stem cells (iPSCs) by generating synthetic images in Blender to train 50+ models, including YOLOv8, enhancing detection and classification of iPSC characteristics.", ['Pytorch', 'Blender', 'YOLO'], null, 'resources/biosurf_poster.pdf'));
@@ -80,6 +84,15 @@ cardList.push(new Card('projects', 'The Cycle of Socialization: A Visual Model',
 cardList.push(new Card('projects', 'Portfolio Website', 'I built a static portfolio website, employing a mobile-first approach with dynamic, responsive elements for an optimized user experience.', ['JS', 'HTML', 'CSS', 'Bootstrap'], 'https://github.com/jumonlala/portfolio', 'https://jumonlala.github.io/portfolio/'));
 cardList.push(new Card('projects', 'Stroke Prediction Project', 'This project predicts strokes using logistic regression on a Kaggle healthcare dataset. Data preprocessing is performed, PCA is applied to visualize key features, and model performance is evaluated through accuracy, ROC/AUC scores, and confusion matrix analysis.', ['Scikit-Learn', 'Numpy', 'Pandas', 'Matplotlib'], 'https://github.com/krishaanant/314-Final-Project', null));
 cardList.push(new Card('projects', 'Analysis of Uber and Lyft Rides in Boston', 'This project analyzes a dataset of Uber and Lyft rides in Boston to explore patterns in ride characteristics and pricing. The team followed an exploratory data analysis (EDA) approach and found that distance, surge multiplier, and ride type significantly affect price distributions, while temperature does not.', ['Numpy', 'Pandas', 'Matplotlib', 'Seaborn'], 'https://github.com/jumonlala/uber_lyft_in_boston', null));
+
+cardList.push(new Card('blogs', 'From 2014 to 2025: How the U.S. Bird Flu Crisis Has Evolved', "", null, null, 'resources/eng310_final.pdf'))
+cardList.push(new Card('blogs', 'Mechanism Description of the Marble Machine', "", null, null, 'resources/eng310_mechanism.pdf'))
+cardList.push(new Card('blogs', 'Between Stereotype and Self: The Role of the Model Minority Myth in Shaping Academic Decisions Among Asian American Students', "", null, null, 'resources/soc3030_final.pdf'))
+cardList.push(new Card('blogs', 'Vaccine Hesitancy Among Evangelicals Through the Lens of Secularization Theorists', "", null, null, 'resources/soc329_final.pdf'))
+cardList.push(new Card('blogs', 'Religion in the Marketplace: A Sociological Perspective on Church Planting and Secularization', "", null, null, 'resources/soc329_exam2.pdf'))
+cardList.push(new Card('blogs', 'Sacred and Secular: Examining Religion in Social Contexts', "", null, null, 'resources/soc329_exam1.pdf'))
+cardList.push(new Card('blogs', 'Religion in Prison: A Lens on Race, Gender, and Social Stratification', "", null, null, 'resources/soc329_memo2.pdf'))
+cardList.push(new Card('blogs', 'Questioning Faith: Secularization and the Development of Atheist Identity', "", null, null, 'resources/soc329_memo3.pdf'))
 
 cardList.push(new Card('blogs', 'Reflection on the Cycle of Socialization', "In 'The Cycle of Socialization,' Bobbie Haro highlights how we are born into identities that shape our societal roles, leading to systemic inequalities and internalized oppression. Recognizing these cycles is essential for fostering intergroup dialogue and challenging societal norms.", null, null, 'https://github.com/jumonlala/cycle_of_socialization_writing'));
 cardList.push(new Card('blogs', 'Reflection on Intersectionality', "In 'Intersectionality Revisited,' Patricia Hill Collins and Sirma Bilge emphasize intersectionality as a vital activism tool that highlights the unique struggles faced by individuals with multiple identities. They caution against reducing intersectionality to mere identity categories, stressing its importance in understanding systemic power dynamics.", null, null, 'https://github.com/jumonlala/intersectionality_revisted'));
