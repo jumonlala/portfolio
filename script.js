@@ -73,6 +73,7 @@ class Card {
 
 var cardList = []; 
 
+cardList.push(new Card('projects', 'Predicting the 2025 NFL Regular Season with STAN and Random Forest', "My team developed Bayesian hierarchical models in Stan to forecast 2025 NFL regular-season wins using Expected Points Added (EPA) as a predictor of game outcomes. We applied MCMC diagnostics and Random Forest classification to posterior predictive draws to refine prediction thresholds and hence improve predictive performance.", ['R'], null, 'resources/stat_comp_final.pdf'))
 cardList.push(new Card('projects', 'Enhancing Algerian Forest Fire Prediction with Machine Learning', "I analyzed the Algerian Forest Fire dataset from Kaggle and addressed two binary classification tasks: identifying the region and determining whether a fire occurred given weather information and fire index measurements. For both problems, I trained K-Nearest Neighbors (KNN) and Support Vector Machine (SVM) models before and after dimension reduction using a Random Forest model.", ['Python'], null, 'resources/cse514_final.pdf'))
 cardList.push(new Card('projects', 'Comprehensive Regression Modeling and Statistical Inference on Starcraft Data', "My teammate and I built a statistical model to analyze total hours played by StarCraft players. We focused on statistical inference, applying techniques such as hypothesis testing and nonparametric methods, while also assessing heteroskedasticity, validating the model with permutation tests, and evaluating a mixed-effects model.", ['R'], null, 'resources/sds4211_final.pdf'))
 
